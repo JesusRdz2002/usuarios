@@ -7,8 +7,8 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 // getenv() detecta automáticamente el usuario, contraseña y base de datos en Railway
 $host     = getenv('MYSQLHOST') ?: 'mysql.railway.internal'; 
 $user     = getenv('MYSQLUSER') ?: 'root';
-$password = getenv('MYSQLPASSWORD') ?: 'EeBwWKVhMoYXMisvHxDIZAtbwbNdQcsQ';
-$database = getenv('MYSQLDATABASE') ?: 'datos';
+$password = getenv('MYSQLPASSWORD') ?: 'password';
+$database = getenv('MYSQLDATABASE') ?: 'db';
 $port     = getenv('MYSQLPORT') ?: 8080; // Crucial: Railway usa puertos variables
 
 try {
