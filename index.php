@@ -9,7 +9,7 @@ $host     = getenv('MYSQLHOST') ?: 'mysql.railway.internal';
 $user     = getenv('MYSQLUSER') ?: 'root';
 $password = getenv('MYSQLPASSWORD') ?: 'EeBwWKVhMoYXMisvHxDIZAtbwbNdQcsQ';
 $database = getenv('MYSQLDATABASE') ?: 'datos';
-$port     = getenv('MYSQLPORT') ?: 8000; // Crucial: Railway usa puertos variables
+$port     = getenv('MYSQLPORT') ?: 8080; // Crucial: Railway usa puertos variables
 
 try {
     // Conexión pasándole el puerto ($port) al final obligatoriamente
